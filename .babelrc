@@ -1,0 +1,17 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": 10
+      }
+    }]
+  ],
+  "plugins": [
+    "macros",
+    "lodash",
+    "contracts",
+    "implicit-function",
+    "transform-pipeline",
+    "wildcard"
+  ]
+}
