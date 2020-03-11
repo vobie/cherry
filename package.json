@@ -1,0 +1,42 @@
+{
+  "name": "cherry",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example-debug-privileged": "ENABLE_UNSAFE_PIPE_CMDS=true DEBUG=cherry,cherry:Nonix:Pipeline babel-watch src/examples/showoff.js",
+    "example-privileged": "ENABLE_UNSAFE_PIPE_CMDS=true babel-watch src/examples/showoff.js",
+    "build": "babel src --out-dir lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-contracts": "^1.2.0",
+    "babel-plugin-implicit-function": "^0.1.1",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-macros": "^2.5.1",
+    "babel-plugin-transform-pipeline": "^0.1.0",
+    "babel-plugin-wildcard": "^5.0.0",
+    "babel-watch": "^7.0.0",
+    "param.macro": "^3.2.0",
+    "webpack": "^4.29.6"
+  },
+  "bin": {
+    "cherry": "./lib/bin/cli.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "css-select": "^2.0.2",
+    "debug": "^4.1.1",
+    "htmlparser2": "^3.10.1",
+    "json-stringify-safe": "^5.0.1",
+    "lodash": "^4.17.11",
+    "split-string": "^6.0.0"
+  }
+}
